@@ -1,0 +1,45 @@
+.vjs-chapter-marker {
+  position: absolute;
+  height: 5px;
+  width: 8px;
+  background-color: lightgrey;
+  top: 44%;
+  z-index: 10;
+}
+.vjs-chapter-overlay {
+  position: absolute;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  z-index: 5;
+}
+.vjs-chapter-label {
+  position: absolute;
+  bottom: 53px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  z-index: 20;
+}
+.vjs-chapter-overlay:hover .vjs-chapter-label,
+.vjs-chapter-label.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.segment-button {
+    padding: 5px;
+    margin: 5px;
+}
